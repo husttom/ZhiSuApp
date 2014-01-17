@@ -1,0 +1,163 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_color"
+    android:orientation="horizontal" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_marginRight="5dp"
+        android:layout_weight="1"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:id="@+id/mainmetro_one"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_marginBottom="5dp"
+            android:layout_weight="1"
+            android:background="@drawable/color_main_one_selector"
+            android:clickable="true" >
+
+            <ImageView
+                android:id="@+id/mainmetro_one_image"
+                android:layout_width="@dimen/mainmetro_image_side_length"
+                android:layout_height="@dimen/mainmetro_image_side_length"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:src="@drawable/main_nfc" />
+
+            <TextView
+                android:id="@+id/mainmetro_one_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/mainmetro_one_image"
+                android:layout_centerHorizontal="true"
+                android:paddingTop="5dp"
+                android:text="@string/warehouse"
+                android:textColor="#ffffff" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/mainmetro_two"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_marginTop="5dp"
+            android:layout_weight="1"
+            android:background="@drawable/color_main_two_selector"
+            android:clickable="true" >
+
+            <ImageView
+                android:id="@+id/mainmetro_two_image"
+                android:layout_width="@dimen/mainmetro_image_side_length"
+                android:layout_height="@dimen/mainmetro_image_side_length"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:src="@drawable/main_dimensional_code" />
+
+            <TextView
+                android:id="@+id/mainmetro_two_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/mainmetro_two_image"
+                android:layout_centerHorizontal="true"
+                android:paddingTop="5dp"
+                android:text="@string/extracode"
+                android:textColor="#ffffff" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_marginLeft="5dp"
+        android:layout_weight="1"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:id="@+id/mainmetro_three"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="3"
+            android:background="@drawable/color_main_three_selector"
+            android:clickable="true" >
+
+            <ImageView
+                android:id="@+id/mainmetro_three_image"
+                android:layout_width="@dimen/mainmetro_small_image_side_length"
+                android:layout_height="@dimen/mainmetro_small_image_side_length"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:src="@drawable/main_setting" />
+
+            <TextView
+                android:id="@+id/mainmetro_three_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/mainmetro_three_image"
+                android:layout_centerHorizontal="true"
+                android:paddingTop="0dp"
+                android:text="@string/productbill"
+                android:textColor="#ffffff" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/mainmetro_four"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_weight="2"
+            android:background="@drawable/color_main_four_selector"
+            android:clickable="true" >
+
+            <ImageView
+                android:id="@+id/mainmetro_four_image"
+                android:layout_width="@dimen/mainmetro_image_side_length"
+                android:layout_height="@dimen/mainmetro_image_side_length"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:src="@drawable/main_code" />
+
+            <TextView
+                android:id="@+id/mainmetro_four_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/mainmetro_four_image"
+                android:layout_centerHorizontal="true"
+                android:paddingTop="5dp"
+                android:text="XXXX"
+                android:textColor="#ffffff" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/mainmetro_five"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="3"
+            android:background="@drawable/color_main_five_selector"
+            android:clickable="true" >
+
+            <ImageView
+                android:id="@+id/mainmetro_five_image"
+                android:layout_width="@dimen/mainmetro_small_image_side_length"
+                android:layout_height="@dimen/mainmetro_small_image_side_length"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:src="@drawable/main_express_query" />
+
+            <TextView
+                android:id="@+id/mainmetro_five_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/mainmetro_five_image"
+                android:layout_centerHorizontal="true"
+                android:paddingTop="0dp"
+                android:text="XXXX"
+                android:textColor="#ffffff" />
+        </RelativeLayout>
+    </LinearLayout>
+
+</LinearLayout>

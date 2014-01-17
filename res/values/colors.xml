@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    
+    <color name="result_view">#b0000000</color>
+    <color name="viewfinder_mask">#60000000</color>
+    <color name="possible_result_points">#c0ffff00</color>
+		
+	<color name="black">#000000</color>
+	<color name="white">#FFFFFF</color>
+	<color name="text_color">#000000</color>
+	<color name="bg_color">#272727</color>
+	<color name="color_detail_bg">#fff1efeb</color>
+	<color name="list_light">#FFD700</color>
+	<color name="footbar_bg_color">#c3c9be</color>
+	<color name="color_code">#ffb79f2e</color>
+		
+	<color name="color_pressed">#ff60a917</color>
+	<color name="color_main_one">#ffee5871</color>
+	<color name="color_main_two">#fff48221</color>
+	<color name="color_main_three">#ffa151b5</color>
+	<color name="color_main_four">#ff00bec8</color>
+	<color name="color_main_five">#ff41dd00</color>
+	
+	<color name="more_item_pressed">#ff218dff</color>
+    <color name="more_item_line">#ffbbbbbb</color>
+	
+	<color name="warehouse_item_detail_button">#FFAF60</color>
+		
+	
+
+    
+</resources>

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/color_detail_bg"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/mmtitle_bg_alpha" >
+
+        <Button
+            android:id="@+id/extracode_button_back"
+            android:layout_width="67.0dip"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5dip"
+            android:background="@drawable/title_back_btn"
+            android:text="@string/back"
+            android:textColor="@android:color/white" />
+
+        <TextView
+            android:id="@+id/extracode_textview_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+			android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"
+            android:gravity="center_vertical"
+            android:text="@string/extracode"
+            android:textColor="@android:color/white"
+            android:textSize="16sp" />
+     
+    </RelativeLayout>
+	
+</LinearLayout>

@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/listitemheight"
+    android:descendantFocusability="blocksDescendants" >
+
+    <ImageView
+        android:id="@+id/warehouse_scan_img"
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="@dimen/listitemspace"
+        android:layout_marginRight="@dimen/listitemspace"
+        android:scaleType="center"
+        android:src="@drawable/new_bill_img" />
+    
+	<CheckBox
+        android:id="@+id/warehouse_scan_checkbox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+		android:layout_centerHorizontal="true"
+		android:layout_marginLeft="@dimen/listitemspace"
+        android:layout_marginRight="@dimen/listitemspace"
+        android:focusable="false" />
+    
+    <TextView
+        android:id="@+id/warehouse_scan_num"
+        android:layout_width="40dp"
+        android:layout_height="@dimen/listitemheight"
+        android:layout_toLeftOf="@id/warehouse_scan_checkbox"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:paddingLeft="@dimen/listitemspace"
+        android:paddingTop="@dimen/listitemspaceTop"
+        android:singleLine="true"
+        android:textColor="@color/text_color"
+        android:textSize="@dimen/Text_size" />
+
+    <LinearLayout
+        android:id="@+id/warehouse_scan_text_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="50.0dip"
+        android:layout_toLeftOf="@id/warehouse_scan_num"
+        android:layout_toRightOf="@id/warehouse_scan_img"
+        android:gravity="center_vertical"
+        android:weightSum="2.0" >
+
+        <TextView
+            android:id="@+id/warehouse_scan_class"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/listitemheight"
+            android:layout_weight="1.0"
+            android:gravity="center_vertical|center_horizontal"
+            android:paddingLeft="@dimen/listitemspace"
+            android:paddingRight="@dimen/listitemspace"
+            android:singleLine="true"
+            android:textColor="@color/text_color"
+            android:textSize="@dimen/Text_size" />
+
+        <TextView
+            android:id="@+id/warehouse_scan_material"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/listitemheight"
+            android:layout_weight="1.0"
+            android:gravity="center_vertical|center_horizontal"
+            android:paddingLeft="@dimen/listitemspace"
+            android:paddingRight="@dimen/listitemspace"
+            android:singleLine="true"
+            android:textColor="@color/text_color"
+            android:textSize="@dimen/Text_size" />
+    </LinearLayout>
+
+
+</RelativeLayout>

@@ -1,0 +1,34 @@
+<resources>
+
+    <style name="AppBaseTheme" parent="android:Theme.Light">
+        
+    </style>
+
+    <style name="AppTheme" parent="AppBaseTheme">
+
+    </style>
+	
+	<style name="more_button_style">
+        <item name="android:textSize">16.0sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">#ff666666</item>
+        <item name="android:gravity">left|center</item>
+        <item name="android:paddingLeft">10.0dip</item>
+        <item name="android:paddingRight">10.0dip</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">40.0dip</item>
+        <item name="android:drawableRight">@drawable/arrow</item>
+    </style>
+	
+	<style name="express_query_result_text">
+        <item name="android:textSize">14.0sp</item>
+        <item name="android:textColor">#ff000000</item>
+        <item name="android:paddingLeft">10.0dip</item>
+        <item name="android:paddingTop">5.0dip</item>
+        <item name="android:paddingRight">10.0dip</item>
+        <item name="android:paddingBottom">5.0dip</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+</resources>

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">ZhiSuApp</string>
+	<string name="ExtraCodeActivity">ExtraCodeActivity</string>
+	<string name="WarehouseActivity">WarehouseActivity</string>
+	<string name="ProductBillActivity">ProductBillActivity</string>
+	<string name="WarehouseNewBillActivity">WarehouseNewBillActivity</string>
+	<string name="DetailBillActivity">DetailBillActivity</string>
+	<string name="WarehouseScanActivity">WarehouseScanActivity</string>
+	
+	
+	<string name="action_settings">Settings</string>
+	<string name="back">返回</string>
+	
+	<string name="main_title">扫码管理</string>
+	<string name="warehouse">入库</string>
+	<string name="extracode">产品附码</string>
+	<string name="productbill">生产单据</string>
+	<string name="warehouse_bill_detail">详情</string>
+	<string name="warehouse_newbill">新建入库单</string>	
+	<string name="detailbill">单据详情</string>
+	<string name="warehouse_scan">入库扫描</string>
+	
+	<string name="warehouse_footbar_newbill">新建入库单</string>	
+	<string name="warehouse_newbill_footbar_ok">确定</string>
+	<string name="warehouse_newbill_footbar_commit">完成</string>
+	<string name="warehouse_newbill_class">选择分类</string>
+	<string name="warehouse_newbill_material">选择原料</string>
+	<string name="warehouse_scan_footbar_commit">入库</string>
+
+</resources>

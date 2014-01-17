@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/color_detail_bg"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/detailbill_title_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/mmtitle_bg_alpha" >
+
+        <Button
+            android:id="@+id/detailbill_button_back"
+            android:layout_width="67.0dip"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5dip"
+            android:background="@drawable/title_back_btn"
+            android:text="@string/back"
+            android:textColor="@android:color/white" />
+
+        <TextView
+            android:id="@+id/detailbill_textview_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+			android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"
+            android:gravity="center_vertical"
+            android:text="@string/detailbill"
+            android:textColor="@android:color/white"
+            android:textSize="16sp" />
+    </RelativeLayout>
+    
+     <RelativeLayout
+	    android:id="@+id/detailbill_list_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:layout_below="@id/detailbill_title_layout"
+        android:orientation="vertical" >
+
+        <ListView
+            android:id="@+id/detailbill_list"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerHorizontal="true"
+            android:cacheColorHint="#00000000"
+            android:divider="#D4D4D4"
+            android:dividerHeight="0.5dip" >
+        </ListView>
+    </RelativeLayout>
+    
+	
+</LinearLayout>

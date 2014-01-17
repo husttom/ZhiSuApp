@@ -1,0 +1,153 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/bg_color"
+    android:orientation="vertical"
+    tools:context=".MainSourceActivity" >
+
+    <TextView
+        android:id="@+id/main_title"
+        android:layout_width="fill_parent"
+        android:layout_height="40.0dip"
+        android:layout_alignParentTop="true"
+        android:background="#44000000"
+        android:clickable="true"
+        android:gravity="center"
+        android:text="@string/main_title"
+        android:textColor="#ffffffff"
+        android:textSize="24.0sp"
+        android:textStyle="bold" />
+
+    <LinearLayout
+        android:id="@+id/main_footbar_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="50.0dip"
+        android:layout_alignParentBottom="true"
+        android:background="#44000000"
+        android:gravity="center_vertical"
+        android:weightSum="3.0" >
+
+        <ImageButton
+            android:id="@+id/main_footbar_user"
+            android:layout_width="0.0dip"
+            android:layout_height="fill_parent"
+            android:layout_weight="1.0"
+            android:background="@drawable/color_item_button_selector"
+            android:padding="10.0dip"
+            android:scaleType="fitCenter"
+            android:src="@drawable/main_user" />
+
+        <ImageButton
+            android:id="@+id/main_footbar_history"
+            android:layout_width="0.0dip"
+            android:layout_height="fill_parent"
+            android:layout_weight="1.0"
+            android:background="@drawable/color_item_button_selector"
+            android:padding="10.0dip"
+            android:scaleType="fitCenter"
+            android:src="@drawable/main_history" />
+
+        <ImageButton
+            android:id="@+id/main_footbar_settings"
+            android:layout_width="0.0dip"
+            android:layout_height="fill_parent"
+            android:layout_weight="1.0"
+            android:background="@drawable/color_item_button_selector"
+            android:padding="10.0dip"
+            android:scaleType="fitCenter"
+            android:src="@drawable/main_settings" />
+    </LinearLayout>
+
+    <zhisu.mt.zhisuapp.MainScrollView
+        android:id="@+id/viewflipper_scrollview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/main_footbar_layout"
+        android:layout_below="@id/main_title"
+        android:focusable="false"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:scrollbars="none" >
+
+        <RelativeLayout
+            android:id="@+id/ly"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <ViewFlipper
+                android:id="@+id/main_viewflipper"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+
+                <LinearLayout
+                    android:id="@+id/LinearLayout1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" >
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="160dip"
+                        android:background="@drawable/default_pic_1" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical" >
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="160dip"
+                        android:background="@drawable/default_pic_2" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical" >
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="160dip"
+                        android:background="@drawable/default_pic_3" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical" >
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="160dip"
+                        android:background="@drawable/default_pic_4" />
+                </LinearLayout>
+            </ViewFlipper>
+
+            <RelativeLayout
+                android:id="@+id/main_flipper_radio"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@id/main_viewflipper"
+                android:padding="5dp" >
+
+                <include layout="@layout/main_flipper_radio_layout" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="340dp"
+                android:layout_below="@id/main_viewflipper"
+                android:orientation="vertical"
+                android:paddingBottom="10dp"
+                android:paddingTop="10dp" >
+
+                <include layout="@layout/main_metro_layout" >
+                </include>
+            </RelativeLayout>
+        </RelativeLayout>
+    </zhisu.mt.zhisuapp.MainScrollView>
+
+</RelativeLayout>
